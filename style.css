@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+    body {
+      font-family: "Roboto", sans-serif;
+      background-color: #DEE5D5;
+      line-height: 1.5;
+    }
+  
+    header {
+      position: fixed;
+      background-color: #DEE5D5;
+      font-family: "Montserrat", serif, sans-serif;
+      font-size: 1vw;
+      font-weight: bold;
+      width: 50%;
+      text-align: center;
+      top: 0;
+      z-index: 2;
+      color: #D26059;
+    }
+  
+    nav ul {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      list-style: none;
+    }
+  
+    nav ul li {
+      padding: 2vw;
+    }
+  
+    a {
+      text-decoration: none;
+      color: #6F7F83;
+    }
+  
+  a:hover {
+    color: #D26059;
+    text-decoration: none;
+  }
+  
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-size: 3vw;
+      font-weight: 600;
+      color: #D97668;
+      line-height: normal;
+      padding: 1.5vw;
+    }
+  
+    h2 {
+      font-family: "Montserrat", serif;
+      font-size: 2vw;
+      font-weight: 400;
+      color: #7D7779;
+    }
+  
+    h3, h4, h5, h6 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2vw;
+      font-weight: 600;
+      color: #7D7779;
+      padding: 1.5vw;
+    }
+  
+    p {
+      padding: 10px 0 10px 0;
+    }
+  
+  #main {
+    scroll-margin-top: 10vw;
+  }
+    
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .story-div {
+      width: 50%;
+      text-align: center;
+    }
+  
+    #title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 60vw;
+      padding: 0 50px 0 50px;
+    }
+  
+    #tribute-info {
+      scroll-margin-top: -5px;
+      padding: 50px 50px 150px 50px;
+      text-align: left;
+      color: #7D7779;
+    }
+  
+    #tribute-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #article-img {
+      max-width: 80%;
+      border-radius: 50%;
+    }
+  
+  #article-text {
+    scroll-margin-top: 10vw;
+    margin-top: -6vw;
+  }
+  
+  #article-text p {
+    font-size: 1.2vw;
+  }
+  
+    #img-div {
+      width: 50%;
+    }
+    
+    figure {
+      position: fixed;
+    }
+    
+    #image {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+    
+    #img-caption {
+      font-family: "Roboto", sans-serif;
+      font-size: 1vw;
+      position: absolute;
+      bottom: 25%;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: rgb(227, 227, 227);
+      box-sizing: border-box;
+      padding: 10px;
+      max-width: 50%;
+    }
+  
+    footer {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1vw;
+      position: fixed;
+      background-color: #DEE5D5;
+      color: #6F7F83;
+      bottom: 0;
+      width: 50%;
+      text-align: center;
+      z-index: 2;
+      height: 2vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+  
+    
+    @media (max-width: 767px) {
+  
+      header {
+          right: 0;   
+          font-size: 50%;
+          text-align: right;
+          width: 100%;
+          padding: 20px 0 20px 0;
+      }
+  
+      nav ul {
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-end;
+        }
+  
+        nav ul li {
+          padding: 1vw;
+        }
+  
+        h1 {
+          font-size: 3vw;
+        }
+  
+      h2 {
+        font-size: 2vw;
+      }
+  
+      footer {
+          position: relative;
+          width: 100%;
+          align-items: center;
+          font-size: 1vw;
+      }
+      
+      .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20vw;
+      }
+  
+      .story-div {
+          width: 100%;
+          padding: 10px;
+      }
+  
+      #title {
+          height: auto;
+      }
+  
+      #img-div {
+          width: auto;
+          height: 100%;
+        }
+  
+      figure {
+          position: relative;
+      }
+  
+      #img-caption {
+          display: none;
+      }
+  
+      #tribute-info {
+        scroll-margin-top: 0;
+      }
+  
+      #tribute-img {
+          width: 100%;
+          height: 100%;
+      }
+    
+    
+    }
